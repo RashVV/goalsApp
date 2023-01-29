@@ -3,7 +3,7 @@ import { AlertContext } from "../context/alert/alertContext";
 
 export const Alert = () => {
   const {alert, hide} = useContext(AlertContext)
-  if(!alert) return null;
+  if(!alert.visible) return null;
 
   return (
     <div className={`alert alert-${alert.type || 'warning'} alert-dismissible`}>

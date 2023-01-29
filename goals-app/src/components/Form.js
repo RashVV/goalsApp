@@ -9,7 +9,13 @@ export const Form = () => {
   const submitHandler = event => {
     event.preventDefault()
 
-    alert.show(value, 'success')
+    if (value.trim()) {
+      //..
+      alert.show(' Ціль була встановлена ', 'success')
+      setValue('')
+    } else {
+      alert.show(' Сформулюйте та введіть свою ціль ')
+    }
   }
 
   return (
