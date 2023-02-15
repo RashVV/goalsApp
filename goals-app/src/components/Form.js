@@ -14,7 +14,7 @@ export const Form = () => {
       alert.show(' Ціль була встановлена ', 'success')
       setValue('')
     } else {
-      alert.show(' Сформулюйте та введіть свою ціль ')
+      alert.show(' Сформулюйте та введіть свою ціль!!! ')
     }
   }
 
